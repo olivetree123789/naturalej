@@ -2,53 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Royal Principality of Naturalej</title>
+  <title>Royal Principality of Naturalej | Official Website</title>
 
-  <meta name="description" content="Official website of the Royal Principality of Naturalej, a micronation with Novas in Poland and the United States.">
-  <meta name="keywords" content="Naturalej, Royal Principality of Naturalej, micronation, Nova Komorowa, Nova Busko-Zdroja, Nova Mount Prospecta, Nova Glenova, NRM">
+  <meta name="description"
+        content="Official website of the Royal Principality of Naturalej, a micronation with four Novas located in Poland and the United States.">
+
+  <meta name="keywords"
+        content="Naturalej, Royal Principality of Naturalej, micronation, Prince Oliver Komasara, Nova Komorowa, Nova Busko-Zdroja, Nova Mount Prospecta, Nova Glenova, NRM">
+
   <meta name="author" content="Royal Principality of Naturalej">
 
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical"
+        href="https://olivetree123789.github.io/naturalej/">
+
+  <meta property="og:title"
+        content="Royal Principality of Naturalej">
+
+  <meta property="og:description"
+        content="Official website of the Royal Principality of Naturalej.">
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:url"
+        content="https://olivetree123789.github.io/naturalej/">
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #f4f7f3;
-      color: #1d2a1f;
+      background: #f3f6f1;
+      color: #1e2a20;
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(135deg, #214c2d, #4d8a55);
+      background: linear-gradient(135deg, #173d23, #4f8f57);
       color: white;
-      padding: 55px 20px;
       text-align: center;
+      padding: 55px 20px 45px;
+    }
+
+    .header-symbols {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 35px;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+    }
+
+    .header-symbols img {
+      max-width: 230px;
+      max-height: 170px;
+      object-fit: contain;
+      border-radius: 10px;
+      background: white;
+      padding: 7px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.25);
     }
 
     header h1 {
       margin: 0;
-      font-size: 42px;
+      font-size: 45px;
     }
 
-    header p {
-      font-size: 19px;
-      margin: 10px 0 0;
+    header .official {
+      font-size: 20px;
+      margin: 8px 0;
+    }
+
+    .motto {
+      font-size: 21px;
+      font-style: italic;
+      font-weight: bold;
     }
 
     nav {
-      background: #173b22;
+      background: #122f1c;
       padding: 14px;
       text-align: center;
       position: sticky;
       top: 0;
       z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 12px;
+      margin: 0 10px;
       font-weight: bold;
     }
 
@@ -57,7 +112,7 @@
     }
 
     main {
-      max-width: 1050px;
+      max-width: 1100px;
       margin: auto;
       padding: 35px 20px;
     }
@@ -65,66 +120,136 @@
     section {
       background: white;
       margin-bottom: 28px;
-      padding: 28px;
-      border-radius: 14px;
+      padding: 30px;
+      border-radius: 15px;
       box-shadow: 0 3px 12px rgba(0,0,0,0.08);
     }
 
     h2 {
-      color: #245a32;
-      border-bottom: 2px solid #dbe9dd;
-      padding-bottom: 8px;
+      color: #235b31;
+      border-bottom: 2px solid #dce9dc;
+      padding-bottom: 9px;
     }
 
     h3 {
-      color: #356e40;
-    }
-
-    .hero-box {
-      text-align: center;
-      padding: 20px;
-    }
-
-    .motto {
-      font-size: 22px;
-      font-style: italic;
-      font-weight: bold;
-      color: #315f39;
+      color: #346f42;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
     }
 
     .card {
-      background: #f4f8f4;
-      border: 1px solid #dbe8dc;
-      border-radius: 12px;
+      background: #f4f8f3;
+      border: 1px solid #d8e5d8;
+      border-radius: 13px;
       padding: 20px;
     }
 
-    .money {
-      font-size: 28px;
-      font-weight: bold;
-      text-align: center;
-      color: #245a32;
+    .card img {
+      width: 100%;
+      max-height: 190px;
+      object-fit: contain;
+      border-radius: 9px;
+      margin-bottom: 12px;
+      background: white;
     }
 
-    footer {
-      background: #173b22;
-      color: white;
+    .nova-card img {
+      aspect-ratio: 3 / 2;
+      object-fit: contain;
+    }
+
+    .banknote img {
+      width: 100%;
+      object-fit: contain;
+      background: white;
+      border: 1px solid #ddd;
+    }
+
+    .money-title {
+      font-size: 27px;
+      font-weight: bold;
+      color: #245b31;
       text-align: center;
-      padding: 25px;
-      margin-top: 40px;
+      margin-top: 10px;
+    }
+
+    .map {
+      text-align: center;
+    }
+
+    .map img {
+      max-width: 100%;
+      border-radius: 12px;
+      border: 1px solid #d4ddd4;
+    }
+
+    .symbol-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      align-items: start;
+    }
+
+    .symbol-box {
+      text-align: center;
+    }
+
+    .symbol-box img {
+      max-width: 100%;
+      max-height: 320px;
+      object-fit: contain;
+      border-radius: 10px;
     }
 
     .notice {
       background: #eef7ef;
       border-left: 5px solid #4d8a55;
-      padding: 15px;
-      margin: 18px 0;
+      padding: 16px;
+      margin: 20px 0;
+    }
+
+    .fact {
+      font-size: 17px;
+    }
+
+    .section-intro {
+      font-size: 17px;
+    }
+
+    footer {
+      background: #122f1c;
+      color: white;
+      text-align: center;
+      padding: 32px 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 5px;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 31px;
+      }
+
+      .header-symbols img {
+        max-width: 160px;
+        max-height: 125px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 6px;
+      }
+
+      section {
+        padding: 22px;
+      }
     }
   </style>
 
@@ -132,23 +257,40 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://olivetree123789.github.io/naturalej/#organization",
     "name": "Royal Principality of Naturalej",
     "alternateName": "Naturalej",
-    "description": "Official website of the Royal Principality of Naturalej.",
+    "url": "https://olivetree123789.github.io/naturalej/",
+    "description": "Official website of the Royal Principality of Naturalej, a micronation with Novas in Poland and the United States.",
     "founder": {
       "@type": "Person",
       "name": "Oliver Komasara"
     }
   }
   </script>
+
 </head>
 
 <body>
 
 <header>
+
+  <div class="header-symbols">
+    <img src="Flaga Naturaleja.jpg"
+         alt="The Royal Flag of Naturalej">
+
+    <img src="Coat of Arms.png"
+         alt="Coat of Arms of the Royal Principality of Naturalej">
+  </div>
+
   <h1>Royal Principality of Naturalej</h1>
-  <p>Official Website</p>
-  <p class="motto">United by Nature, Towards a Brighter Future.</p>
+
+  <p class="official">Official Website</p>
+
+  <p class="motto">
+    United by Nature, Towards a Brighter Future.
+  </p>
+
 </header>
 
 <nav>
@@ -164,32 +306,38 @@
 <main>
 
 <section id="about">
+
   <h2>About Naturalej</h2>
 
-  <p>
-    The <strong>Royal Principality of Naturalej</strong>, commonly known as
-    <strong>Naturalej</strong>, is a micronation with designated Novas located
-    in Poland and the United States.
+  <p class="section-intro">
+    The <strong>Royal Principality of Naturalej</strong>,
+    commonly known as <strong>Naturalej</strong>,
+    is a micronation with designated Novas located in Poland
+    and the United States.
   </p>
 
   <p>
-    Naturalej is organized as a <strong>Constitutional Democratic Principality</strong>
+    Naturalej is organized as a
+    <strong>Constitutional Democratic Principality</strong>
     and is headed by <strong>Prince Oliver Komasara</strong>.
   </p>
 
   <p>
-    The designated capital of Naturalej is <strong>Komorów, Poland</strong>.
+    The designated capital of Naturalej is
+    <strong>Komorów, Poland</strong>.
     The official languages are <strong>Polish and English</strong>.
   </p>
 
   <div class="notice">
-    Naturalej is a micronation and does not claim internationally recognized
-    sovereignty over the areas associated with its Novas.
+    Naturalej is a micronation and does not claim internationally
+    recognized sovereignty over the areas associated with its Novas.
   </div>
+
 </section>
 
 <section id="government">
-  <h2>Government</h2>
+
+  <h2>Government of Naturalej</h2>
 
   <p>
     The Royal Principality of Naturalej operates as a
@@ -197,234 +345,493 @@
   </p>
 
   <div class="grid">
+
     <div class="card">
-      <h3>The Prince</h3>
+      <h3>Prince of Naturalej</h3>
+
       <p>
-        The Prince is the head of state of Naturalej.
-        The position is held by <strong>Prince Oliver Komasara</strong>.
+        The Prince is the head of state of the Royal Principality.
+      </p>
+
+      <p>
+        The position is held by
+        <strong>Prince Oliver Komasara</strong>,
+        founder of Naturalej.
       </p>
     </div>
 
     <div class="card">
       <h3>Grand Council</h3>
+
       <p>
-        The Grand Council may propose and debate legislation and participate
-        in decisions concerning the administration of Naturalej.
+        The Grand Council may propose and debate legislation
+        and participate in decisions concerning the administration
+        and development of Naturalej.
       </p>
     </div>
 
     <div class="card">
       <h3>Council of Elders</h3>
+
       <p>
-        The Council of Elders provides advice, guidance, and deliberation
-        within the governmental structure of the Principality.
+        The Council of Elders provides advice, guidance,
+        and deliberation within the governmental structure
+        of the Principality.
       </p>
     </div>
+
   </div>
 
   <p>
-    A bill does not become official law until it is signed by the Prince.
+    Legislation does not become official law of Naturalej
+    until it is signed by the Prince.
   </p>
+
 </section>
 
 <section id="novas">
-  <h2>Novas</h2>
+
+  <h2>Novas of Naturalej</h2>
 
   <p>
-    The first-level administrative divisions of Naturalej are known as
-    <strong>Novas</strong>. Naturalej currently has four Novas.
+    The first-level administrative divisions of Naturalej
+    are known as <strong>Novas</strong>.
+    Naturalej currently consists of four Novas located across
+    Poland and the United States.
   </p>
 
-  <div class="grid">
-    <div class="card">
-      <h3>Nova Komorowa</h3>
-      <p><strong>Location:</strong> Komorów, Poland</p>
-      <p>
-        Nova Komorowa contains the designated capital of Naturalej and has a
-        special connection to the Crown.
-      </p>
-    </div>
+  <div class="map">
+    <img src="Nova Map.png"
+         alt="Map showing the Novas of the Royal Principality of Naturalej">
 
-    <div class="card">
-      <h3>Nova Busko-Zdroja</h3>
-      <p><strong>Location:</strong> Busko-Zdrój, Poland</p>
-      <p>
-        Nova Busko-Zdroja reflects Polish cultural identity and the area's
-        association with mineral and healing waters.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Nova Mount Prospecta</h3>
-      <p><strong>Location:</strong> Mount Prospect, Illinois, United States</p>
-      <p>
-        Nova Mount Prospecta is the Nova where the Prince is most often present.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Nova Glenova</h3>
-      <p><strong>Location:</strong> Glenview, Illinois, United States</p>
-      <p>
-        Nova Glenova emphasizes nature, greenery, growth, peace, and harmony.
-      </p>
-    </div>
+    <p>
+      <strong>Map of the Novas of the Royal Principality of Naturalej</strong>
+    </p>
   </div>
+
+  <div class="grid">
+
+    <div class="card nova-card">
+
+      <img src="Flaga Komorowa.png"
+           alt="Official Flag of Nova Komorowa">
+
+      <h3>Nova Komorowa</h3>
+
+      <p>
+        <strong>Location:</strong><br>
+        Komorów, 28-133, Poland
+      </p>
+
+      <p>
+        Nova Komorowa contains Komorów, the designated capital
+        of the Royal Principality of Naturalej.
+      </p>
+
+      <p>
+        Its official flag uses green and white colors with strands
+        of wheat representing nature, peace, and its connection
+        to Polish farmers.
+      </p>
+
+      <p>
+        A golden crown represents the Nova's status as the capital Nova
+        and its special connection to the Crown.
+      </p>
+
+    </div>
+
+    <div class="card nova-card">
+
+      <img src="Flaga Busko Zdroja.png"
+           alt="Official Flag of Nova Busko-Zdroja">
+
+      <h3>Nova Busko-Zdroja</h3>
+
+      <p>
+        <strong>Location:</strong><br>
+        Busko-Zdrój, 28-100, Poland
+      </p>
+
+      <p>
+        Nova Busko-Zdroja reflects its Polish cultural identity
+        and the area's association with mineral and healing waters.
+      </p>
+
+      <p>
+        Its red and white colors represent its connection to Poland
+        and the Polish flag.
+      </p>
+
+      <p>
+        The golden water fountain represents Busko-Zdrój's culture
+        and its famous mineral and healing waters.
+      </p>
+
+    </div>
+
+    <div class="card nova-card">
+
+      <img src="Flaga Mount Prospecta.png"
+           alt="Official Flag of Nova Mount Prospecta">
+
+      <h3>Nova Mount Prospecta</h3>
+
+      <p>
+        <strong>Location:</strong><br>
+        Mount Prospect, Illinois 60056, United States
+      </p>
+
+      <p>
+        Nova Mount Prospecta is the Nova where the Prince of Naturalej
+        is most often present.
+      </p>
+
+      <p>
+        Its blue, white, and green colors represent community,
+        peace, and nature.
+      </p>
+
+      <p>
+        The star on the flag represents the presence of the Prince
+        and Mount Prospecta's special role within the Principality.
+      </p>
+
+    </div>
+
+    <div class="card nova-card">
+
+      <img src="Glenova.png"
+           alt="Official Flag of Nova Glenova">
+
+      <h3>Nova Glenova</h3>
+
+      <p>
+        <strong>Location:</strong><br>
+        Glenview, Illinois 60025, United States
+      </p>
+
+      <p>
+        Nova Glenova emphasizes nature, greenery, growth,
+        peace, and harmony.
+      </p>
+
+      <p>
+        Its green and white colors represent nature,
+        peace, and harmony.
+      </p>
+
+      <p>
+        The tree represents Glenova's natural environment,
+        greenery, growth, and the importance of preserving nature.
+      </p>
+
+    </div>
+
+  </div>
+
 </section>
 
 <section id="symbols">
+
   <h2>National Symbols</h2>
 
-  <h3>The Royal Flag of Naturalej</h3>
-  <p>
-    The Royal Flag of Naturalej features a light green background with a red
-    apple at its center containing a white heart.
-  </p>
+  <div class="symbol-row">
 
-  <p>
-    The apple represents <strong>nature and growth</strong>, while the white
-    heart represents <strong>a clear heart, unity, and love of nature</strong>.
-  </p>
+    <div class="symbol-box">
 
-  <h3>Coat of Arms</h3>
-  <p>
-    The coat of arms of Naturalej includes the red apple and white heart,
-    a crown representing the Principality and Crown, and imagery representing
-    the Principality's connections to Poland, the United States, and nature.
-  </p>
+      <img src="Flaga Naturaleja.jpg"
+           alt="The Royal Flag of Naturalej">
+
+      <h3>The Royal Flag of Naturalej</h3>
+
+      <p>
+        The Royal Flag of Naturalej features a light green background
+        with a red apple at its center containing a white heart.
+      </p>
+
+      <p>
+        The apple represents <strong>nature and growth</strong>,
+        while the white heart represents
+        <strong>a clear heart, unity, and love of nature</strong>.
+      </p>
+
+    </div>
+
+    <div class="symbol-box">
+
+      <img src="Coat of Arms.png"
+           alt="Coat of Arms of the Royal Principality of Naturalej">
+
+      <h3>Coat of Arms</h3>
+
+      <p>
+        The Coat of Arms of the Royal Principality of Naturalej
+        centers on the red apple and white heart.
+      </p>
+
+      <p>
+        The crown represents the Principality and the Crown,
+        while the Polish white eagle and American bald eagle
+        represent Naturalej's connections to Poland and the United States.
+      </p>
+
+      <p>
+        Natural imagery represents nature, growth, peace,
+        and the lands associated with Naturalej.
+      </p>
+
+    </div>
+
+  </div>
 
   <h3>National Motto</h3>
+
   <p class="motto">
-    United by Nature, Towards a Brighter Future.
+    "United by Nature, Towards a Brighter Future."
   </p>
 
   <h3>National Anthem</h3>
+
   <p>
-    The national anthem of the Royal Principality of Naturalej is
-    <strong>United by Nature</strong>.
+    The national anthem of the Royal Principality of Naturalej
+    is <strong>United by Nature</strong>.
   </p>
+
 </section>
 
 <section id="currency">
+
   <h2>NRM Currency</h2>
 
   <p>
-    The official micronational currency of Naturalej is the
-    <strong>NRM</strong>.
+    The official micronational currency of the Royal Principality
+    of Naturalej is the <strong>NRM</strong>.
   </p>
 
   <p>
-    The NRM uses the symbol <strong>₦</strong>, an N with a horizontal line
-    through its center. The symbol is placed before the amount.
+    The NRM uses the currency symbol <strong>₦</strong>,
+    representing the letter N with a horizontal line through its center.
+    The symbol is placed before the monetary value.
+  </p>
+
+  <p>
+    The current banknote series consists of
+    <strong>₦10, ₦25, ₦50, and ₦100</strong>.
   </p>
 
   <div class="grid">
-    <div class="card money">₦10</div>
-    <div class="card money">₦25</div>
-    <div class="card money">₦50</div>
-    <div class="card money">₦100</div>
+
+    <div class="card banknote">
+
+      <img src="NRM 10.png"
+           alt="Official 10 NRM banknote of Naturalej">
+
+      <div class="money-title">₦10</div>
+
+      <p>
+        Official ₦10 NRM banknote of the Royal Principality of Naturalej.
+      </p>
+
+    </div>
+
+    <div class="card banknote">
+
+      <img src="NRM 25.png"
+           alt="Official 25 NRM banknote of Naturalej">
+
+      <div class="money-title">₦25</div>
+
+      <p>
+        Official ₦25 NRM banknote of the Royal Principality of Naturalej.
+      </p>
+
+    </div>
+
+    <div class="card banknote">
+
+      <img src="NRM 50.png"
+           alt="Official 50 NRM banknote of Naturalej">
+
+      <div class="money-title">₦50</div>
+
+      <p>
+        Official ₦50 NRM banknote of the Royal Principality of Naturalej.
+      </p>
+
+    </div>
+
+    <div class="card banknote">
+
+      <img src="NRM 100.png"
+           alt="Official 100 NRM banknote of Naturalej">
+
+      <div class="money-title">₦100</div>
+
+      <p>
+        Official ₦100 NRM banknote of the Royal Principality of Naturalej.
+      </p>
+
+    </div>
+
   </div>
 
   <p>
-    NRM banknotes use design elements associated with Naturalej, including
-    light green coloring, the red apple with a white heart, denomination
-    markings, a portrait of Prince Oliver, and the signature of Oliver Komasara.
+    The banknotes use a light green background reflecting
+    The Royal Flag of Naturalej.
   </p>
+
+  <p>
+    The designs feature the red apple with a white heart,
+    one of the principal symbols of Naturalej,
+    together with a portrait of Prince Oliver,
+    denomination markings, NRM markings,
+    and the signature of Oliver Komasara.
+  </p>
+
 </section>
 
 <section id="history">
-  <h2>History</h2>
+
+  <h2>History of Naturalej</h2>
 
   <p>
-    The ideas, national symbols, institutions, and governmental structure of
-    Naturalej developed before the establishment of the present constitutional
-    system.
+    The ideas, symbols, institutions, and governmental structure
+    that developed into Naturalej began before the establishment
+    of its present constitutional system.
   </p>
 
   <p>
     An earlier constitutional document was created on
-    <strong>20 July 2025</strong> during the early development of Naturalej.
+    <strong>20 July 2025</strong> during the early development
+    of Naturalej.
   </p>
 
   <p>
-    During 2026, the governmental structure, Novas, national symbols, currency,
-    and constitutional system were further developed.
+    During 2026, Naturalej underwent further development.
+    Its governmental structure, Novas, national symbols,
+    NRM currency, and constitutional system were developed
+    in preparation for the establishment of the Principality.
   </p>
 
   <p>
-    The present Royal Principality of Naturalej is planned to be formally
-    established on <strong>5 September 2026</strong>, when its present
-    Constitution is scheduled to enter into force.
+    The present Royal Principality of Naturalej is planned
+    to be formally established on
+    <strong>5 September 2026</strong>,
+    when its present Constitution is scheduled to enter into force.
   </p>
+
 </section>
 
 <section id="constitution">
-  <h2>Constitution</h2>
+
+  <h2>Constitution of Naturalej</h2>
 
   <p>
-    The Constitution of Naturalej establishes the structure and principles of
-    the Royal Principality, including the Crown, the Prince, the Grand Council,
-    the Council of Elders, individual rights, the Novas, citizenship, national
-    symbols, finance, succession, and constitutional amendments.
+    The Constitution of Naturalej establishes the structure
+    and principles of the Royal Principality.
   </p>
 
   <p>
-    The Constitution is intended to serve as the highest internal law of
-    Naturalej.
+    It establishes the Crown, the Prince, the Grand Council,
+    the Council of Elders, rights and freedoms, the Novas,
+    citizenship, national symbols, finance, emergencies,
+    succession, and constitutional amendments.
   </p>
+
+  <p>
+    The Constitution is intended to serve as the highest
+    internal law of the Royal Principality of Naturalej.
+  </p>
+
 </section>
 
-<section>
+<section id="information">
+
   <h2>Official Information</h2>
 
   <div class="grid">
-    <div class="card">
+
+    <div class="card fact">
       <strong>Official Name</strong><br>
       Royal Principality of Naturalej
     </div>
 
-    <div class="card">
+    <div class="card fact">
       <strong>Common Name</strong><br>
       Naturalej
     </div>
 
-    <div class="card">
+    <div class="card fact">
       <strong>Capital</strong><br>
       Komorów, Poland
     </div>
 
-    <div class="card">
+    <div class="card fact">
       <strong>Head of State</strong><br>
       Prince Oliver Komasara
     </div>
 
-    <div class="card">
+    <div class="card fact">
       <strong>Government</strong><br>
       Constitutional Democratic Principality
     </div>
 
-    <div class="card">
+    <div class="card fact">
+      <strong>Legislature</strong><br>
+      Grand Council and Council of Elders
+    </div>
+
+    <div class="card fact">
       <strong>Official Languages</strong><br>
       Polish and English
     </div>
 
-    <div class="card">
+    <div class="card fact">
       <strong>Currency</strong><br>
       NRM (₦)
     </div>
 
-    <div class="card">
+    <div class="card fact">
       <strong>Demonym</strong><br>
       Naturalejan
     </div>
+
+    <div class="card fact">
+      <strong>National Anthem</strong><br>
+      United by Nature
+    </div>
+
+    <div class="card fact">
+      <strong>National Motto</strong><br>
+      United by Nature, Towards a Brighter Future.
+    </div>
+
+    <div class="card fact">
+      <strong>Novas</strong><br>
+      4
+    </div>
+
   </div>
+
 </section>
 
 </main>
 
 <footer>
-  <strong>Royal Principality of Naturalej</strong><br>
-  United by Nature, Towards a Brighter Future.
+
+  <p>
+    <strong>Royal Principality of Naturalej</strong>
+  </p>
+
+  <p>
+    Official Website
+  </p>
+
+  <p>
+    United by Nature, Towards a Brighter Future.
+  </p>
+
 </footer>
 
 </body>
